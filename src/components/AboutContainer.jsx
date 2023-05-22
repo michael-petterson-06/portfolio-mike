@@ -23,7 +23,8 @@ const AboutContainer = () => {
         </p>
          <p>
            Disponível para os cargos de Desenvolvedor de Software Front-End, Back-End, Full-Stack.
-        </p>
+        </p>      
+          
       </section>
     );
   };
