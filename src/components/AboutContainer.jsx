@@ -9,14 +9,13 @@ const AboutContainer = () => {
             Redux, MySQL, MongoDB, Node JS, APIs Restful, PHP entre outros.
         </p>
         <p>
-            De 2018 á 2020 cursei Técnico de informática no SENAC - Lapa-Tito, onde tive meus primeiros contatos com programação.
+            De 2018 a 2020 cursei Técnico de informática no SENAC - Lapa-Tito, onde tive meus primeiros contatos com programação.
         </p>
         <p>
             Finalizei em 2022 o curso de Desenvolvimento Web da Trybe com duração de 1 ano; possuo projetos pessoais e em equipe nessa área.
         </p>
         <p>
-          Atualmente estou cursando Tecnologia em Analise e desenvolvimento de sistema na Uninove.
-          Curso este que vai de 2023 á 2025
+          Atualmente estou cursando Tecnologia em Análise e Desenvolvimento de Sistema na Universidade Nove de Julho, curso que vai de 2023 a 2025.
         </p>
         <p>
         Busco oportunidades em ambientes que estimulem o aprendizado contínuo e que valorizem as boas relações profissionais.
