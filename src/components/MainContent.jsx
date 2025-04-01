@@ -9,8 +9,7 @@ const MainContent = () => {
     <main id="main-content">
       <AboutContainer />
       <TechnologiesContainer />
-      <ProjectsContainer />
-   
+      {/* <ProjectsContainer /> */}
     </main>
   );
 };

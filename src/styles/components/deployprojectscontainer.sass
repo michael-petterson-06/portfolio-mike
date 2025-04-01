@@ -1,0 +1,57 @@
+@use '../main/variables'
+@use '../main/mixins'
+
+.deploy-projects-container
+  background-color: variables.$bg-color
+  border-radius: variables.$container-border-radius
+  padding: 3rem
+  margin: 2rem 3rem
+  display: flex
+  flex-direction: column
+
+  h2
+    @include mixins.center
+    color: variables.$text-color
+    font-size: 2.2rem
+    margin-bottom: 1.3rem
+    gap: 1rem
+
+    &:after
+      @include mixins.gradient-border
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    gap: 2rem
+    padding: 0
+    list-style: none
+
+  li
+    background-color: variables.$bg-color-secondary
+    padding: 1rem 1.5rem
+    border-radius: variables.$card-border-radius
+    display: flex
+    align-items: center
+    gap: .6rem
+
+    .project-link
+      color: variables.$text-color
+      font-weight: bold
+      text-decoration: none
+      display: flex
+      align-items: center
+      gap: 0.5rem
+      transition: color 0.3s ease
+
+      &:hover
+        color: variables.$text-color-secondary
+
+    .icon
+      font-size: 1.5rem
+
+    #icon-movies
+      color: #e50914
+    #icon-blog
+      color: #ff9900
+    #icon-dictionary
+      color: #3b82f6
