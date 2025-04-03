@@ -27,11 +27,14 @@
 
   .technologies-grid
     display: flex
-    flex-direction: column
+    flex-wrap: wrap // ✅ permite que os ícones quebrem de linha de forma elegante
+    justify-content: center // ✅ centraliza o conteúdo horizontalmente
     align-items: center
-    gap: 0.5rem
+    gap: 1.5rem
     padding: 0
-    overflow: visible !important
+    width: 100%
+    max-width: 100% // ✅ permite que o container use toda a largura disponível
+    margin: 0 auto
 
   .technology-card
     background: none
@@ -43,14 +46,15 @@
     text-align: center !important
 
     svg
-      display: none
+      display: block !important
+      width: 3rem
+      height: 3rem
+      font-size: 2.5rem
+      margin: 0 auto 0.8rem auto
+      color: variables.$text-color
 
     .technology-info
-      h3
-        font-size: 1rem
-        text-align: center !important
-        color: variables.$text-color
-        margin: 0.3rem 0
+      display: none // 👈 escondendo os nomes
 
   .deploy-projects-container
     width: 100% !important
