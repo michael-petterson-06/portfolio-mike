@@ -7,6 +7,10 @@
   padding: 3rem
   display: flex
   flex-direction: column
+  z-index: 0
+
+  @media (max-width: 730px)
+    margin-top: 2rem // ✅ garante espaço entre os blocos
 
   h2
     @include mixins.center
