@@ -1,4 +1,4 @@
-import { FaFilm, FaBlog, FaBookOpen } from "react-icons/fa";
+import { FaFilm, FaBlog, FaBookOpen, FaCoins } from "react-icons/fa";
 import "../styles/components/deployprojectscontainer.sass";
 
 const deployedProjects = [
@@ -17,12 +17,17 @@ const deployedProjects = [
     url: "https://dictionary-anju.vercel.app/",
     icon: <FaBookOpen id="icon-dictionary" />,
   },
+  {
+    name: "Simulador de Rendimento",
+    url: "https://simulador-financeiro-silk.vercel.app/",
+    icon: <FaCoins id="icon-simulador" />,
+  }
 ];
 
 const DeployProjectsContainer = () => {
   return (
     <section className="deploy-projects-container">
-      <h2>Projetos em Deploy</h2>
+      <h2>Projetos</h2>
       <ul>
         {deployedProjects.map((project, index) => (
           <li key={index}>

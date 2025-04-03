@@ -1,0 +1,75 @@
+@use '../main/variables'
+@use '../main/mixins'
+
+@media (max-width: 730px)
+
+  // Título principal
+
+  .title
+    margin-top: 1.5rem !important
+
+  h1
+    font-size: 2.5rem
+    text-align: center
+    word-break: break-word
+
+  // Seção de Tecnologias como lista simples
+  .technologies-container
+    display: flex
+    flex-direction: column
+    align-items: center // ✅ centraliza tudo dentro da section
+    text-align: center
+
+  .technologies-grid
+    display: flex
+    flex-direction: column
+    align-items: center // ✅ centraliza a lista
+    gap: 0.5rem
+    padding: 0
+
+  .technology-card
+    background: none
+    border: none !important
+    background: none !important
+    box-shadow: none !important
+    padding: 0
+    margin: 0
+    display: block
+    text-align: center !important
+
+    svg
+      display: none
+
+    .technology-info
+      h3
+        font-size: 1rem
+        text-align: center !important
+        color: variables.$text-color
+        margin: 0.3rem 0
+
+  .deploy-projects-container
+    width: 100% !important
+    margin: 0 !important
+    padding: 1.5rem 1rem !important
+    box-sizing: border-box
+
+    h2
+      font-size: 1.5rem
+      text-align: center
+
+    ul
+      display: block
+      padding: 0
+      width: 100%
+
+    li
+      background: none
+      padding: 0.5rem 0
+      border: none
+      text-align: center
+      width: 100%
+
+    .project-link
+      font-size: 1rem
+      display: inline-block
+      color: variables.$text-color
