@@ -2,12 +2,31 @@
 @use '../main/mixins'
 
 .technologies-container
-    margin-bottom: 1rem
+    display: flex
+    flex-direction: column
+    flex: 1
+    overflow: hidden // impede crescimento além da altura do MainContent
+    max-height: 100%
+
+    h2
+        padding: 1rem 0
+        font-size: 2.2rem
+        color: variables.$text-color
 
     .technologies-grid
+        flex: 1
+        overflow-y: auto // ✅ o scroll agora está apenas aqui
+        padding-right: 0.5rem
         display: flex
         flex-wrap: wrap
         gap: 1.5rem
+
+        &::-webkit-scrollbar
+            width: 6px
+
+        &::-webkit-scrollbar-thumb
+            background-color: variables.$text-color-secondary
+            border-radius: 4px
 
     .technology-card
         @include mixins.center

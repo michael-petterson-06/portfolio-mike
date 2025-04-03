@@ -1,11 +1,15 @@
 @use '../main/variables'
 @use '../main/mixins'
-    
+
 #main-content
     background-color: variables.$bg-color
     flex: 2 1 0
     border-radius: variables.$container-border-radius
     padding: 3rem
+    display: flex
+    flex-direction: column
+    height: 100%
+    overflow: hidden
 
     section
         display: flex
@@ -21,7 +25,6 @@
 
         &:after
             @include mixins.gradient-border
-            
 
     p
         color: variables.$text-color-secondary
@@ -31,4 +34,3 @@
     .btn
         align-self: start
         @include mixins.btn
-        
