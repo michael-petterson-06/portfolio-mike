@@ -10,17 +10,17 @@ const deployedProjects = [
     icon: <FaBullhorn id="icon-faBullhorn" />,
   },
 
-  {
-    name: "TNT FIT",
-    url: "https://tntfitacademia.com.br/",
-    icon: <FaDumbbell id="icon-dumbbell" />,
-  },
+  // {
+  //   name: "TNT FIT",
+  //   url: "https://tntfitacademia.com.br/",
+  //   icon: <FaDumbbell id="icon-dumbbell" />,
+  // },
 
-  {
-    name: "DR Car Services",
-    url: "https://lp.rdcarservices.com.br/",
-    icon: <FaTools id="icon-fatools" />,
-  },
+  // {
+  //   name: "DR Car Services",
+  //   url: "https://lp.rdcarservices.com.br/",
+  //   icon: <FaTools id="icon-fatools" />,
+  // },
 
   {
     name: "Anjun Express",
